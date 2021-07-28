@@ -1,7 +1,8 @@
 import React from 'react';
 import './index.css'
-import data from './data.js'
-import Product from './components/Product.js'
+import { Route } from 'react-router';
+import HomeScreen from './screens/HomeScreen.js';
+import ProductScreen from './screens/ProductScreen.js';
 
 function App() {
   return (
@@ -16,15 +17,8 @@ function App() {
             </div>
         </header>
         <main>
-            <div>
-                <div className="row center">
-
-                { data.products.map((product) => (
-                    <Product key={product._id} product={product}/>
-                ))}
-
-                </div>
-            </div>
+          <Route path="/product/:id" component={ProductScreen} ></Route>
+          <Route exact path="/" component={HomeScreen} ></Route>
         </main>
         <footer className="row center">All right reserved</footer>
     </div>
