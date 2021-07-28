@@ -1,5 +1,4 @@
 import React from 'react'
-import Product from '../components/Product'
 import Rating from '../components/Rating';
 import data from '../data';
 import { Link } from 'react-router-dom'
