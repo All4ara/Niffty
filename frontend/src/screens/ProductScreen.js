@@ -10,7 +10,7 @@ const ProductScreen = (props) => {
     }
     return (
         <div>
-        <Link to="/"><i class="fa fa-angle-left"></i> Back To Products</Link>
+        <Link to="/"><i className="fa fa-angle-left"></i> Back To Products</Link>
             <div className="row top">
                 <div className="col-2">
                     <img className="large" src={product.image} alt={product.name} />
