@@ -12,7 +12,7 @@ function App() {
                 <a className="brand" href="/">Niffty</a>
             </div>
             <div>
-                <a href="/cart">Cartt</a>
+                <a href="/cart">Cart</a>
                 <a href="/signin">Sign In</a>
             </div>
         </header>
